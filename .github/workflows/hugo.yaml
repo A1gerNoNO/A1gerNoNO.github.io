@@ -43,6 +43,7 @@ jobs:
 
       - name: Install Ivy theme
         run: |
+          mkdir -p themes
           git clone --depth 1 https://github.com/yihui/hugo-ivy.git themes/hugo-ivy
 
       - name: Build with Hugo
