@@ -1,6 +1,6 @@
 +++
 title = 'Git 使用与 Markdown 博客写作入门'
-date = 2026-07-06T21:00:00+08:00
+date = 2026-07-06T16:30:00+08:00
 draft = false
 slug = 'git-markdown-blog-guide'
 tags = ['Git', 'Markdown', 'Hugo', '博客']
