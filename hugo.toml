@@ -1,9 +1,9 @@
-baseURL = 'https://YOUR_USERNAME.github.io/'
+baseURL = 'https://A1gerNoNO.github.io/'
 locale = 'zh-cn'
-title = '我的个人网站'
+title = 'A1gerNoNO 的个人网站'
 theme = 'hugo-ivy'
 
-copyright = 'Copyright &copy; 2026 YOUR_NAME'
+copyright = 'Copyright &copy; 2026 A1gerNoNO'
 hasCJKLanguage = true
 enableRobotsTXT = true
 
@@ -12,7 +12,7 @@ enableRobotsTXT = true
 
 [params]
   description = '个人博客、学习笔记与项目记录'
-  footer = '&copy; 2026 YOUR_NAME'
+  footer = '&copy; 2026 A1gerNoNO'
 
 [caches]
   [caches.images]

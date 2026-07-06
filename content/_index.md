@@ -4,7 +4,7 @@ date = 2026-07-06T10:00:00+08:00
 draft = false
 +++
 
-你好，我是 **YOUR_NAME**。
+你好，我是 **A1gerNoNO**。
 
 这是我的个人网站。我会在这里整理学习笔记、项目经历、技术文章和一些长期积累的想法。
 
@@ -23,6 +23,4 @@ draft = false
 
 ## 项目
 
-- GitHub: <https://github.com/YOUR_USERNAME>
-
-把 `YOUR_NAME` 和 `YOUR_USERNAME` 替换成你的真实信息后，这个首页就可以作为第一版个人主页使用。
+- GitHub: <https://github.com/A1gerNoNO>
