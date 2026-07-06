@@ -5,6 +5,14 @@ draft = false
 slug = 'git-markdown-blog-guide'
 tags = ['Git', 'Markdown', 'Hugo']
 categories = ['技术笔记']
++++
+
+写技术博客不需要复杂工具。对我来说，先掌握两件事就够了：
+
+- 用 Markdown 写内容
+- 用 Git 提交和发布
+
+这篇文章只记录最常用的流程。
 
 ## 写作流程
 
@@ -126,3 +134,5 @@ print("hello")
 ```toml
 title = 'Git 常用命令整理'
 ```
+
+每篇文章只写一个主题。内容不必长，重要的是清楚、可复用、以后还能看懂。
