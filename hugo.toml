@@ -1,7 +1,7 @@
 baseURL = 'https://A1gerNoNO.github.io/'
 locale = 'zh-cn'
-title = 'A1gerNoNO 的个人网站'
-theme = 'hugo-ivy'
+title = 'A1gerNoNO'
+theme = 'PaperMod'
 
 copyright = 'Copyright &copy; 2026 A1gerNoNO'
 hasCJKLanguage = true
@@ -11,8 +11,24 @@ enableRobotsTXT = true
   posts = '/posts/:year/:month/:slug/'
 
 [params]
-  description = '个人博客、学习笔记与项目记录'
-  footer = '&copy; 2026 A1gerNoNO'
+  env = 'production'
+  description = 'A1gerNoNO 的技术博客'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  comments = false
+  hideFooter = false
+
+  [params.homeInfoParams]
+    Title = 'A1gerNoNO'
+    Content = '技术博客'
 
 [caches]
   [caches.images]
@@ -20,14 +36,10 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
-    name = '首页'
-    url = '/'
-    weight = 1
-  [[menu.main]]
     name = '文章'
     url = '/posts/'
-    weight = 2
+    weight = 1
   [[menu.main]]
     name = '关于'
     url = '/about/'
-    weight = 3
+    weight = 2

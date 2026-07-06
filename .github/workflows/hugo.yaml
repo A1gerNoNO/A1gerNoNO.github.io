@@ -41,10 +41,10 @@ jobs:
           tar -xf "${RUNNER_TEMP}/hugo.tar.gz" -C "${RUNNER_TEMP}/hugo"
           echo "${RUNNER_TEMP}/hugo" >> "$GITHUB_PATH"
 
-      - name: Install Ivy theme
+      - name: Install PaperMod theme
         run: |
           mkdir -p themes
-          git clone --depth 1 https://github.com/yihui/hugo-ivy.git themes/hugo-ivy
+          git clone --depth 1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 
       - name: Build with Hugo
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"

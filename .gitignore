@@ -3,5 +3,6 @@ resources/_gen/
 .hugo_build.lock
 .tools/
 themes/hugo-ivy/
+themes/PaperMod/
 .DS_Store
 Thumbs.db
