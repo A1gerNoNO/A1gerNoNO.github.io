@@ -6,13 +6,6 @@
   --main-width: 720px;
   --nav-width: 720px;
   --article-width: 720px;
-  --code-block-bg: #f6f8fa;
-  --code-bg: #f2f4f7;
-}
-
-.dark {
-  --code-block-bg: #1f2329;
-  --code-bg: #262b33;
 }
 
 body {
