@@ -1,0 +1,33 @@
+baseURL = 'https://YOUR_USERNAME.github.io/'
+locale = 'zh-cn'
+title = '我的个人网站'
+theme = 'hugo-ivy'
+
+copyright = 'Copyright &copy; 2026 YOUR_NAME'
+hasCJKLanguage = true
+enableRobotsTXT = true
+
+[permalinks]
+  posts = '/posts/:year/:month/:slug/'
+
+[params]
+  description = '个人博客、学习笔记与项目记录'
+  footer = '&copy; 2026 YOUR_NAME'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[menu]
+  [[menu.main]]
+    name = '首页'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = '文章'
+    url = '/posts/'
+    weight = 2
+  [[menu.main]]
+    name = '关于'
+    url = '/about/'
+    weight = 3
