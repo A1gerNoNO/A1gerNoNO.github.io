@@ -13,8 +13,10 @@ enableRobotsTXT = true
 [params]
   env = 'production'
   description = 'A1gerNoNO 的技术博客'
+  mainSections = ['posts']
   defaultTheme = 'auto'
   disableThemeToggle = false
+  disableSpecial1stPost = true
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
