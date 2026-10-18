@@ -28,7 +28,7 @@ categories = ['建站']
 如果换一台电脑，应先克隆仓库、安装与部署配置一致的 Hugo Extended，再下载主题：
 
 ```powershell
-git clone https://github.com/A1gerNoNO/A1gerNoNO.github.io.git site
+git clone <repository-url> site
 cd site
 git clone --depth 1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 hugo server -D

@@ -38,7 +38,7 @@ summaryLength = 90
   [params.profileMode]
     enabled = true
     title = 'wangyu'
-    subtitle = '真实姓名：wangyu · 邮箱：1225045336@njupt.edu.cn'
+    subtitle = 'wangyu · 邮箱：1225045336@njupt.edu.cn'
 
   [[params.profileMode.buttons]]
     name = '联系我'
