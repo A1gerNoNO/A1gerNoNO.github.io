@@ -17,10 +17,9 @@ categories = ['建站']
 
 ## 先运行本地网站
 
-本机项目位于 `E:\Workbench\alger.github.io`，已经准备好 PaperMod 主题和 Hugo 工具。在 PowerShell 中运行：
+进入仓库根目录后，在 PowerShell 中运行：
 
 ```powershell
-cd E:\Workbench\alger.github.io
 .\.tools\hugo\hugo.exe server -D
 ```
 
@@ -29,8 +28,8 @@ cd E:\Workbench\alger.github.io
 如果换一台电脑，应先克隆仓库、安装与部署配置一致的 Hugo Extended，再下载主题：
 
 ```powershell
-git clone https://github.com/A1gerNoNO/A1gerNoNO.github.io.git alger.github.io
-cd alger.github.io
+git clone https://github.com/A1gerNoNO/A1gerNoNO.github.io.git site
+cd site
 git clone --depth 1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 hugo server -D
 ```
@@ -121,7 +120,7 @@ git push
 
 1. 将内容修改提交并推送；若在其他分支工作，先合并到 `main`。
 2. 在 GitHub 的 Actions 页面检查构建和部署结果。
-3. 部署成功后访问[wangyu 的博客](https://wangyu.github.io/)确认内容。
+3. 部署成功后访问[wangyu 的博客](https://a1gernono.github.io/)确认内容。
 
 仓库 `Settings → Pages → Source` 应选择 **GitHub Actions**。推送到任意分支都自动发布的说法不适用于本站当前配置。
 
