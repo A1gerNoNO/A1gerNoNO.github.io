@@ -164,11 +164,16 @@ body {
 
 .site-home {
   display: grid;
-  grid-template-columns: minmax(190px, 225px) minmax(0, 1fr);
-  gap: clamp(36px, 6vw, 72px);
-  width: min(100%, 900px);
+  grid-template-columns: minmax(170px, 215px) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 56px);
+  width: min(100%, 960px);
   margin: 0 auto;
   padding: 10px 0 20px;
+}
+
+.site-home,
+.site-home * {
+  box-sizing: border-box;
 }
 
 .site-home-sidebar {
@@ -364,9 +369,9 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 600px) {
   .main {
-    padding-top: 38px;
+    padding-top: 28px;
   }
 
   .site-home {
@@ -379,14 +384,14 @@ body {
     padding: 0 0 30px;
     border-inline-end: 0;
     border-bottom: 1px solid var(--border);
-    text-align: center;
+    text-align: left;
   }
 
   .site-avatar {
-    width: 112px;
-    height: 112px;
-    margin: 0 auto 16px;
-    font-size: 2.8rem;
+    width: 104px;
+    height: 104px;
+    margin: 0 0 16px;
+    font-size: 2.65rem;
   }
 
   .site-role {
@@ -395,13 +400,13 @@ body {
 
   .site-contact-list,
   .site-home-actions {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .site-contact-list {
     text-align: left;
-    width: min(100%, 290px);
-    margin-inline: auto;
+    width: 100%;
+    margin-inline: 0;
   }
 
   .site-home-content {
