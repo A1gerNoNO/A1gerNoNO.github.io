@@ -1,0 +1,57 @@
+{{- $profile := site.Params.profileMode -}}
+{{- $email := "mailto:1225045336@njupt.edu.cn" -}}
+{{- $github := "https://github.com/A1gerNoNO" -}}
+<section class="site-home" aria-labelledby="site-home-title">
+  <aside class="site-home-sidebar">
+    <div class="site-avatar" aria-hidden="true">W</div>
+    <p class="site-kicker">PERSONAL SITE</p>
+    <h1 id="site-home-title">{{ $profile.title | default site.Title | markdownify }}</h1>
+    <p class="site-role">个人主页</p>
+
+    <div class="site-contact-list">
+      <a href="{{ $email }}">
+        <span class="site-contact-icon" aria-hidden="true">✉</span>
+        <span>1225045336@njupt.edu.cn</span>
+      </a>
+      <a href="{{ $github }}" target="_blank" rel="noopener noreferrer">
+        <span class="site-contact-icon" aria-hidden="true">↗</span>
+        <span>GitHub</span>
+      </a>
+    </div>
+
+    <div class="site-home-actions">
+      <a class="site-action site-action-primary" href="{{ $email }}">联系我</a>
+      <a class="site-action" href="{{ "about/" | relLangURL }}">关于我</a>
+    </div>
+  </aside>
+
+  <div class="site-home-content">
+    <p class="site-eyebrow">ABOUT ME</p>
+    <h2>关于我</h2>
+    <p class="site-lead">这里是 wangyu 的个人主页，用于展示个人资料与联系方式。</p>
+
+    <section class="site-info-section" aria-labelledby="site-info-title">
+      <h3 id="site-info-title">个人信息</h3>
+      <dl class="site-info-list">
+        <div>
+          <dt>真实姓名</dt>
+          <dd>wangyu</dd>
+        </div>
+        <div>
+          <dt>邮箱</dt>
+          <dd><a href="{{ $email }}">1225045336@njupt.edu.cn</a></dd>
+        </div>
+        <div>
+          <dt>主页</dt>
+          <dd><a href="{{ "" | absLangURL }}">{{ site.Title }}</a></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="site-note" aria-label="联系提示">
+      <strong>保持联系</strong>
+      <p>如果你想交流，可以直接发送邮件。</p>
+      <a class="site-text-link" href="{{ $email }}">发送邮件 <span aria-hidden="true">↗</span></a>
+    </section>
+  </div>
+</section>
