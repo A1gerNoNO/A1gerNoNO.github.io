@@ -1,6 +1,6 @@
-# 阿尔吉的个人博客
+# wangyu 的个人博客
 
-使用 Hugo + PaperMod 构建，部署到 <https://A1gerNoNO.github.io/>。
+使用 Hugo + PaperMod 构建，部署到 <https://wangyu.github.io/>。
 
 ## 本地运行
 
@@ -29,7 +29,7 @@ hugo new content posts/my-note.md
 
 新文章使用 `archetypes/posts.md`，默认为草稿。编辑标题、标签和正文，确认后把 `draft` 改为 `false`。`description` 可填写简短摘要，也用于搜索引擎描述。
 
-文章放在 `content/posts/`。Front matter 用一对 `+++` 包围；日期使用 ISO 格式，例如 `2026-07-10T10:00:00+08:00`。
+文章放在 `content/posts/`。当前个人主页默认隐藏文章；文章源文件仍保留，给每篇文章加上 `searchHidden = false` 并恢复导航后即可重新公开。Front matter 用一对 `+++` 包围；日期使用 ISO 格式，例如 `2026-07-10T10:00:00+08:00`。
 
 ## 检查和发布
 
@@ -61,4 +61,4 @@ git push
 
 目前保留三篇主题完整的文章：商城需求与业务流程、DDD 建模与工程分层、Hugo 博客搭建与写作发布。原 DDD 建模、工程模型和建站入门文章通过 `aliases` 跳转到对应合并文章，原有主要文章通过显式 `slug` 保持地址稳定。
 
-网页显示名称统一为“阿尔吉”；域名、仓库地址和 GitHub 链接仍使用真实账号 `A1gerNoNO`。
+网页显示名称统一为“wangyu”；域名、仓库地址和 GitHub 链接仍使用真实账号 `A1gerNoNO`。
