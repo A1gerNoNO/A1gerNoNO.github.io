@@ -1,10 +1,10 @@
-baseURL = 'https://A1gerNoNO.github.io/'
+baseURL = 'https://wangyu.github.io/'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh'
-title = '阿尔吉'
+title = 'wangyu'
 theme = 'PaperMod'
 
-copyright = 'Copyright &copy; 2026 阿尔吉'
+copyright = 'Copyright &copy; 2026 wangyu'
 hasCJKLanguage = true
 enableRobotsTXT = true
 summaryLength = 90
@@ -17,18 +17,17 @@ summaryLength = 90
 
 [params]
   env = 'production'
-  description = '阿尔吉的技术博客，记录后端开发、项目实践与学习笔记。'
-  mainSections = ['posts']
+  description = 'wangyu 的个人主页。'
+  mainSections = []
   defaultTheme = 'auto'
   disableThemeToggle = false
-  disableSpecial1stPost = true
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = false
   ShowCodeCopyButtons = true
   ShowWordCount = false
-  ShowRssButtonInSectionTermList = true
+  ShowRssButtonInSectionTermList = false
   UseHugoToc = true
   comments = false
   hideFooter = false
@@ -36,16 +35,26 @@ summaryLength = 90
   TocOpen = false
   DateFormat = '2006-01-02'
 
-  [params.homeInfoParams]
-    Title = '阿尔吉'
-    Content = '记录后端开发、项目实践与学习笔记。把遇到的问题写清楚，把学到的知识留下来。'
+  [params.profileMode]
+    enabled = true
+    title = 'wangyu'
+    subtitle = '真实姓名：wangyu · 邮箱：1225045336@njupt.edu.cn'
 
+  [[params.profileMode.buttons]]
+    name = '联系我'
+    url = 'mailto:1225045336@njupt.edu.cn'
+  [[params.profileMode.buttons]]
+    name = '关于我'
+    url = '/about/'
+
+  [[params.socialIcons]]
+    name = 'email'
+    url = 'mailto:1225045336@njupt.edu.cn'
+    title = '邮箱'
   [[params.socialIcons]]
     name = 'github'
     url = 'https://github.com/A1gerNoNO'
-  [[params.socialIcons]]
-    name = 'rss'
-    url = '/index.xml'
+    title = 'GitHub'
 
 [caches]
   [caches.images]
@@ -60,22 +69,6 @@ summaryLength = 90
 
 [menu]
   [[menu.main]]
-    name = '文章'
-    url = '/posts/'
-    weight = 1
-  [[menu.main]]
-    name = '归档'
-    url = '/archives/'
-    weight = 2
-  [[menu.main]]
-    name = '标签'
-    url = '/tags/'
-    weight = 3
-  [[menu.main]]
-    name = '搜索'
-    url = '/search/'
-    weight = 4
-  [[menu.main]]
     name = '关于'
     url = '/about/'
-    weight = 5
+    weight = 1

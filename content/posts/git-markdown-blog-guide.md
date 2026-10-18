@@ -1,7 +1,9 @@
-﻿+++
++++
 title = 'Hugo 博客维护：搭建、写作与发布'
 date = 2026-07-06T16:30:00+08:00
 draft = false
+hiddenInHomeList = true
+searchHidden = true
 slug = 'git-markdown-blog-guide'
 aliases = ['/posts/2026/07/hello-hugo-papermod/']
 description = '整理 Hugo + PaperMod 博客从本地运行、Markdown 写作到 Git 提交和 GitHub Pages 发布的完整流程。'
@@ -119,7 +121,7 @@ git push
 
 1. 将内容修改提交并推送；若在其他分支工作，先合并到 `main`。
 2. 在 GitHub 的 Actions 页面检查构建和部署结果。
-3. 部署成功后访问[阿尔吉的博客](https://A1gerNoNO.github.io/)确认内容。
+3. 部署成功后访问[wangyu 的博客](https://wangyu.github.io/)确认内容。
 
 仓库 `Settings → Pages → Source` 应选择 **GitHub Actions**。推送到任意分支都自动发布的说法不适用于本站当前配置。
 
