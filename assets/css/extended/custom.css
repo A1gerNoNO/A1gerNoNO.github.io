@@ -139,20 +139,20 @@ input:focus-visible {
 
 /* Academic-style profile layout for the article-free home page. */
 :root {
-  --site-accent: #4aa6c1;
-  --site-accent-soft: rgba(74, 166, 193, 0.12);
-  --site-muted-bg: #f5f7f8;
+  --site-accent: #222;
+  --site-accent-soft: rgba(0, 0, 0, 0.06);
+  --site-muted-bg: #f2f2f2;
 }
 
 :root[data-theme="dark"] {
-  --site-accent: #83c7d9;
-  --site-accent-soft: rgba(131, 199, 217, 0.16);
-  --site-muted-bg: #25282b;
+  --site-accent: #ddd;
+  --site-accent-soft: rgba(255, 255, 255, 0.1);
+  --site-muted-bg: #242424;
 }
 
 body {
   min-height: 100vh;
-  color: #4d555b;
+  color: var(--content);
   background: var(--theme);
 }
 
@@ -164,11 +164,16 @@ body {
 
 .site-home {
   display: grid;
-  grid-template-columns: minmax(190px, 225px) minmax(0, 1fr);
-  gap: clamp(36px, 6vw, 72px);
-  width: min(100%, 900px);
+  grid-template-columns: minmax(170px, 215px) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 56px);
+  width: min(100%, 960px);
   margin: 0 auto;
   padding: 10px 0 20px;
+}
+
+.site-home,
+.site-home * {
+  box-sizing: border-box;
 }
 
 .site-home-sidebar {
@@ -184,9 +189,9 @@ body {
   margin-bottom: 20px;
   border: 5px solid var(--site-muted-bg);
   border-radius: 50%;
-  color: #fff;
-  background: linear-gradient(145deg, #4aa6c1, #6d7bd8);
-  box-shadow: 0 8px 24px rgba(49, 84, 101, 0.18);
+  color: var(--theme);
+  background: var(--site-accent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
   font-size: 3.3rem;
   font-weight: 750;
   letter-spacing: -0.06em;
@@ -272,13 +277,13 @@ body {
 
 .site-action-primary {
   border-color: var(--site-accent);
-  color: #fff;
+  color: var(--theme);
   background: var(--site-accent);
 }
 
 .site-action-primary:hover {
-  color: #fff;
-  background: #3b8fa9;
+  color: var(--theme);
+  background: var(--primary);
 }
 
 .site-home-content {
@@ -364,9 +369,9 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 600px) {
   .main {
-    padding-top: 38px;
+    padding-top: 28px;
   }
 
   .site-home {
@@ -379,14 +384,14 @@ body {
     padding: 0 0 30px;
     border-inline-end: 0;
     border-bottom: 1px solid var(--border);
-    text-align: center;
+    text-align: left;
   }
 
   .site-avatar {
-    width: 112px;
-    height: 112px;
-    margin: 0 auto 16px;
-    font-size: 2.8rem;
+    width: 104px;
+    height: 104px;
+    margin: 0 0 16px;
+    font-size: 2.65rem;
   }
 
   .site-role {
@@ -395,13 +400,13 @@ body {
 
   .site-contact-list,
   .site-home-actions {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .site-contact-list {
     text-align: left;
-    width: min(100%, 290px);
-    margin-inline: auto;
+    width: 100%;
+    margin-inline: 0;
   }
 
   .site-home-content {

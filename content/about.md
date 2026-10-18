@@ -9,7 +9,6 @@ description = 'wangyu 的个人资料与联系方式。'
 
 | 项目 | 信息 |
 | --- | --- |
-| 真实姓名 | wangyu |
+| 姓名 | wangyu |
 | 邮箱 | [1225045336@njupt.edu.cn](mailto:1225045336@njupt.edu.cn) |
 | 个人主页 | [a1gernono.github.io](https://a1gernono.github.io/) |
-| GitHub | [github.com/A1gerNoNO](https://github.com/A1gerNoNO) |

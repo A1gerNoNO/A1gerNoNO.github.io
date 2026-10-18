@@ -38,7 +38,7 @@ summaryLength = 90
   [params.profileMode]
     enabled = true
     title = 'wangyu'
-    subtitle = '真实姓名：wangyu · 邮箱：1225045336@njupt.edu.cn'
+    subtitle = 'wangyu · 邮箱：1225045336@njupt.edu.cn'
 
   [[params.profileMode.buttons]]
     name = '联系我'
@@ -51,11 +51,6 @@ summaryLength = 90
     name = 'email'
     url = 'mailto:1225045336@njupt.edu.cn'
     title = '邮箱'
-  [[params.socialIcons]]
-    name = 'github'
-    url = 'https://github.com/A1gerNoNO'
-    title = 'GitHub'
-
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
