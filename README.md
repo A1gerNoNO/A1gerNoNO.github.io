@@ -1,6 +1,6 @@
 # wangyu 个人主页
 
-这是 [wangyu.github.io](https://wangyu.github.io/) 的 Hugo 源文件，使用 PaperMod 主题并通过 GitHub Actions 部署。
+这是 [a1gernono.github.io](https://a1gernono.github.io/) 的 Hugo 源文件，使用 PaperMod 主题并通过 GitHub Actions 部署。
 
 当前主页只展示个人资料、真名和联系方式；文章源文件保留在 `content/posts/`，但不会出现在首页、搜索、归档或导航中。
 
